@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+	<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="js/form.js"></script>
+	
+    <link rel="stylesheet" href="css/form.css">
+<link rel="icon" href="img/photography%20logo.png">
+	<style>
+#google-signin-btn {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+</style>
+</head>
+<body>
+
+    <div class="alert-box">
+        <p class="alert">msg</p>
+    </div>
+
+    <div class="form">
+        <h1 class="heading">login</h1>
+        <input type="email" placeholder="email" autocomplete="off" class="email" required>
+        <input type="password" placeholder="password" autocomplete="off" class="password" required>
+        <button class="submit-btn">log in</button>
+        <a href="register.html" class="link" class="dont">don't have an account? Create one</a>
+    </div>
+
+	
+	<!-- Google Sign-in Button -->
+<div class="google-signin-container">
+	<div id="g_id_onload"
+		 data-client_id="251728963544-dtr8h5ivqr3m0d3rubm2p63u3p1ievp2.apps.googleusercontent.com"
+		 data-callback="handleCredentialResponse"
+		 data-auto_prompt="false">
+	</div>
+
+	<div class="g_id_signin"
+		 data-type="standard"
+		 data-shape="rectangular"
+		 data-theme="outline"
+		 data-text="continue_with"
+		 data-size="large"
+		 data-logo_alignment="left">
+	</div>
+</div>
+	
+    <script src="js/form.js"></script>
+	    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>

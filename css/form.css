@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/login-bg.png);
+    background-size: cover;
+    background-position: center;
+    font-family: 'roboto', sans-serif;
+}
+
+.form{
+    width: 400px;
+    height: auto;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+}
+
+.heading{
+	opacity: 0;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+input,.submit-btn{
+	opacity: 0;
+    width: 80%;
+    height: 35px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    padding: 15px;
+    transition: .5s;
+    text-transform: capitalize;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+input:focus,
+.submit-btn:hover{
+    background: #fff;
+    color: #000;
+}
+
+input:focus::placeholder{
+    color: #000;
+}
+
+.submit-btn{
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 50px auto 0;
+	opacity: 0;
+}
+
+.link{
+	opacity: 0;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    display: block;
+    margin: 80px auto;
+	margin-top: 100px;
+}
+
+.dont{
+	position: absolute;
+	bottom: 10%;
+}
+
+.link:hover{
+    color: #fff;
+}
+
+.alert-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgb(255, 119, 119);
+    border-top: 10px solid rgb(255, 37, 37);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    transition: 1s;
+}
+
+
+
+
+/*add cool glow effect to google button*/
+
+/*
+.google-btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+/* glow */
+/*
+.google-btn::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+.google-btn:hover::before {
+  opacity: 1;
+}
+
+.google-btn:active:after {
+  background: transparent;
+ z-index: 1000;
+}
+
+.google-btn:active {
+  color: #000;
+  font-weight: bold;
+}
+*/
+
+
+/* Styles for the Google Sign-in Button */
+
+/* Customize the button if necessary */
+.g_id_signin .abcRioButton {
+    width: 100%;
+    max-width: 320px;
+	position: absolute;
+	right: 50%;
+	top:50%;
+}
+/* Styles for the Google Sign-in Button */
+.g_id_signin {
+    text-align: center;
+}
+
+.google-signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack the elements vertically */
+	position: absolute;
+	bottom: 25%;
+}
+
+/* For centering everything in the body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
